@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Delius+Unicase:wght@700&family=Inter:wght@700&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    height:200vh;
+    position:relative;
+}
+.navbar{
+    background-color:#6F6AF7;
+    height:15vh;
+    padding:20px 30px;
+    position: sticky;
+    top: 0;
+    z-index:1;
+}
+.navbar .nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+}
+.navbar .logo{
+    color: #FFF;
+    font-family: "Delius Unicase";
+    font-size: 61.43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.navbar .nav-links{
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+    gap:2vw;
+}
+.more-link{
+    display:flex;
+    align-items:center;
+    gap:3px;
+}
+.nav-links a{
+    text-decoration:none;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 36.43px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.navbar .search-container{
+    border-radius: 63px;
+    background: #FFF;
+    padding:10px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.search-container > input{
+    border:none;
+    background-color:transparent;
+    outline:none;
+    color: #9F9F9F;
+    font-family: "DM Sans";
+    font-size: 24.43px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.search-container > button{
+    border:none;
+    background-color: transparent;
+    outline: none;
+}
+.main-section{
+    height:185vh;
+    background-color:#FFF;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.image-container{
+    width:21%;
+    height:48vh;
+}
+.card-container{
+    border-radius: 20px;
+    border: 6px solid #FFF;
+    background: #E5D8FF;
+    box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
+    height: 49vh;
+    width:65%;
+    padding:20px 30px;
+}
+.card-container p{
+    color: #6F7373;
+    font-family: "DM Sans";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 178.7%;
+}
+.box-container{
+    display:flex;
+    justify-content:space-evenly;
+}
+.box{
+    border-radius: 11px;
+    width:22%;
+    box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.40);
+    padding:10px 25px;
+}
+.box-1{
+    background: #929DFF;
+}
+.box-2{
+    background: #734CF2;
+}
+.box-3{
+    background: #D288FF;
+}
+.box-4{
+    background: #000;
+}
+.box p{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 178.7%;
+    letter-spacing: 1.16px;
+}
+.info-container{
+    border-radius: 21px;
+    background: #483EFF;
+    height:75vh;
+    padding:20px 30px;
+    display:flex;
+    justify-content:space-between;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+.buttons-container{
+    width:27%;
+    height:inherit;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.buttons-container > button{
+    height: 15vh;
+    width: 82%;
+}
+.info-button{
+    border-radius: 22px;
+    background: #BCE0F6;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.39);
+    padding:15px 30px;
+    border:none;
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 178.7%;
+    letter-spacing: 1.4px;
+}
+.buttons-container .button{
+    border-radius: 22px;
+    border: 5px solid #FFF;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 178.7%;
+    letter-spacing: 1.4px;
+    Background-color:transparent;
+}
+.info-card{
+    width:70%;
+    height:100%;
+    border-radius: 19px;
+    background: #FFF;
+    padding:50px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.info-card-heading{
+    color: #04285A;
+    font-family: "Inter";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.99px;
+}
+.info-card ul{
+    list-style-type: none;
+    padding:30px 45px;
+}
+.info-card-list-item{
+    color: #04285A;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.94px;
+    margin-bottom:20px;
+}
+.list-item-colon{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78.687%;
+    letter-spacing: 2.73px;
+}
+.list-item-value{
+    color: #143565;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+.next-container{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+.button-next{
+    border-radius: 9px;
+    background: #000;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    padding:17px 23px;
+    width:20%;
+}
+.help-assistant-icon{
+    position: sticky;
+    display:flex;
+    justify-content:flex-end;
+    bottom:0;
+    height:20vh;
+}
+.social-icons{
+    display:flex;
+    flex-direction:column;
+    position:sticky;
+    top:15vh;
+}
+.social-icons img{
+    width:85%;
+    margin-left: auto;
+}
+.whatsapp-icon{
+    border-radius: 11px;
+    border: 3px solid #000;
+    background: #FFF;
+}
+.cards{
+    display:flex;
+    justify-content:space-evenly;
+}
